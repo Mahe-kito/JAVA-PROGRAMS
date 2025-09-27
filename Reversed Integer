@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        int originalNum = a;
+        int d1 = (a / 100);
+        int d2 = (a / 10) % 10;
+        int d3 = a % 10;
+        int reverseNum = d3 * 100 + d2 * 10 + d1;
+        if (originalNum == reverseNum) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+}
